@@ -1,4 +1,4 @@
-on: [pull-request]
+on: [pull_request]
 name: Pull Request on Github
 jobs:
   GITHUB_PR:
