@@ -1,5 +1,5 @@
-on: [pull_request]
 name: Pull Request on Github
+on: [pull_request]
 jobs:
   GITHUB_PR:
     runs-on: ubuntu-latest
@@ -7,7 +7,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Create back-end env file
-        uses: SpicyPizza/create-envfile@v1.3
+        uses: SpicyPizza/create-envfile@v1
         with:
           envkey_POSTGRES_USERNAME: ${{secrets.POSTGRES_USERNAME}}
           envkey_POSTGRES_PASSWORD: ${{secrets.POSTGRES_PASSWORD}}
