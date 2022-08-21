@@ -7,7 +7,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Create back-end env file
-        uses: SpycePizza/create-envfile@v1.3
+        uses: SpicyPizza/create-envfile@v1.3
         with:
           envkey_POSTGRES_USERNAME: ${{secrets.POSTGRES_USERNAME}}
           envkey_POSTGRES_PASSWORD: ${{secrets.POSTGRES_PASSWORD}}
