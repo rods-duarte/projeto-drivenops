@@ -19,3 +19,5 @@ jobs:
           fail_on_empty: true
       - name: Run tests
         run: docker-compose -f docker-compose.test.yml run node_app npm run test
+      - name: Deploy
+        run: cd back-end/ && npm i && npm run build
